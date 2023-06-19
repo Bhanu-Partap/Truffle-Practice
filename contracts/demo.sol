@@ -8,7 +8,7 @@ contract Demo {
         number = _number;
     }
 
-    function getnumber() public returns(uint){
+    function getnumber() public view returns(uint){
         return number;
     }
 }
