@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: SEE LICENSE IN LICENSE
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.7;
 
-contract Demo {
+contract demo {
     uint number;
 
     function setnumber(uint _number) public {
