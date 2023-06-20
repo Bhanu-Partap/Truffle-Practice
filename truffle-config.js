@@ -25,8 +25,8 @@
  * and Infura PROJECT_ID variables inside.
  * For example, your .env file will have the following structure:
  *
- * MNEMONIC = <Your 12 phrase mnemonic>
- * PROJECT_ID = <Your Infura project id>
+ * MNEMONIC = <-->
+ * PROJECT_ID = <-->
  *
  * Deployment with Truffle Dashboard (Recommended for best security practice)
  * --------------------------------------------------------------------------
@@ -66,7 +66,7 @@ module.exports = {
     //
     development: {
      host: "127.0.0.1",     // Localhost (default: none)
-     port: 7545,            // Standard Ethereum port (default: none)
+     port: 8545,            // Standard Ethereum port (default: none)
      network_id: "*",       // Any network (default: none)
     },
     //
@@ -82,8 +82,8 @@ module.exports = {
     //
     // Useful for deploying to a public network.
     // Note: It's important to wrap the provider as a function to ensure truffle uses a new provider every time.
-    goerli: {
-      provider: () => new HDWalletProvider(MNEMONIC, `https://goerli.infura.io/v3/${PROJECT_ID}`),
+    sepolia: {
+      provider: () => new HDWalletProvider("umbrella wink youth afford cement code cloud include junior step fantasy vehicle", `https://sepolia.infura.io/v3/db1f8b566b1c47228779f8e2c80c790b`),
       network_id: 5,       // Goerli's id
       confirmations: 2,    // # of confirmations to wait between deployments. (default: 0)
       timeoutBlocks: 200,  // # of blocks before a deployment times out  (minimum/default: 50)
