@@ -3,9 +3,10 @@ pragma solidity ^0.8.7;
 
 contract demo {
     // uint public number;
-    uint number = 15;
+    uint number;
 
-    function setnumber() public view returns(uint){
+    function setnumber(uint256 _number) public returns(uint){
+        number = _number;
         return number;
     }
 }
