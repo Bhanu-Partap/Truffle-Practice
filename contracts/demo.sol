@@ -2,7 +2,7 @@
 pragma solidity ^0.8.7;
 
 contract demo {
-    uint number;
+    uint public number;
 
     function setnumber(uint _number) public {
         number = _number;
